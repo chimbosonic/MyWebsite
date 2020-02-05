@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FOSDEM 2020</title>
+    <style>
+
+      * {
+      /* white-space: pre-wrap; */
+
+      box-sizing: border-box;
+
+      }
+      div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 125px;
+      }
+
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+        color: var(--white);
+      }
+
+      :root {
+        --base03:  #002b36;
+        --base02:	 #073642;
+        --base01:	 #586e75;
+        --base00:	 #657b83;
+        --base0:	 #839496;
+        --base1:	 #93a1a1;
+        --base2:	 #eee8d5;
+        --base3:	 #fdf6e3;
+        --yellow:	 #b58900;
+        --orange:	 #cb4b16;
+        --red:	   #dc322f;
+        --magenta: #d33682;
+        --violet:	 #6c71c4;
+        --blue:	   #268bd2;
+        --cyan:	   #2aa198;
+        --green:	 #859900;
+        --white:   #FFFFFF;
+      }
+      body {
+        background-color: var(--base03);
+        color: var(--base0);
+      }
+      .dont-panic{
+        color: var(--yellow);
+        white-space: pre-wrap;
+      }
+      #dont-panic{
+        color: var(--yellow);
+      }
+      .user {
+        color: var(--green);
+
+      }
+      .host {
+        color: var(--blue);
+      }
+      .dir {
+        color: var(--blue);
+      }
+      .p {
+        color: var(--orange);
+      }
+      .out {
+        color: var(--white);
+        word-wrap: break-word;
+        width: 650px;
+      }
+      a:link {
+        color: var(--violet);
+      }
+      a:hover {
+        color: var(--blue);
+      }
+      a:focus {
+        color: var(--blue);
+      }
+      a:active {
+        color: var(--red);
+      }
+      a:visited {
+        color: var(--blue);
+      }
+    </style>
+  </head>
+  <body>  
+    <pre><!-- style="word-wrap: break-word; white-space: pre-wrap;">-->
+    <p id="dont-panic">
+                                      nnnmmm
+                       \||\       ;;;;%%%@@@@@@       \ //,
+                        V|/     %;;%%%%%@@@@@@@@@@  ===Y//
+                        68=== ;;;;%%%%%%@@@@@@@@@@@@    @Y
+                        ;Y   ;;%;%%%%%%@@@@@@@@@@@@@@    Y
+                        ;Y  ;;;+;%%%%%%@@@@@@@@@@@@@@@    Y
+                        ;Y__;;;+;%%%%%%@@@@@@@@@@@@@@i;;__Y
+                       iiY"";;   "uu%@@@@@@@@@@uu"   @"";;;>
+                              Y     "UUUUUUUUU"     @@
+                              `;       ___ _       @
+                                `;.  ,====\\=.  .;'
+                                  ``""""`==\\=='
+                                         `;=====
+                                           ===
+
+    88888b   d888b  888b  88 8P 888888    88888b    888     888b  88 88  d888b 88
+    88   88 88   88 88`8b 88      88      88   88  88 88    88`8b 88 88 88   ` 88
+    88   88 88   88 88 88 88      88      88888P  88   88   88 88 88 88 88     88
+    88   88 88   88 88 `8b88      88      88     d8888888b  88 `8b88 88 88   , ""
+    88888P   `888P  88  `888      88      88     88     `8b 88  `888 88  `888P 88
+    </p>
+    </pre>
+    <h2 class="dont-panic"><a href="https://fosdem.org/2020/">FOSDEM</a> 2020</h2>
+    <p class="out">
+      <a href="https://fosdem.org/2020/">FOSDEM</a> is a Free and Open Source Software (FOSS) conference in Brussels. It is one of the biggest of its kind in Europe, with thousands of developers from all over the world gathering at the event. If you are into FOSS or you contribute to open source projects then this is the place to be. This year was an important year for <a href="https://fosdem.org/2020/">FOSDEM</a> as it was celebrating its 20th year. A number of the talks where about the history and evolution of FOSS.</p>
+    <p class="out">
+      In this blog post I will walk you through the different talks I attended. Most of them were recorded and you can find them <a href="https://fosdem.org/2020/schedule/">here</a>.
+    </p>
+<h3 class="dont-panic" ><a href="https://fosdem.org/2020/schedule/event/linux_kernel/">The Linux Kernel: We have to finish this thing one day ;)
+Solving big problems in small steps for more than two decades</a>
+by <a href="https://fosdem.org/2020/schedule/speaker/thorsten_leemhuis/">Thorsten Leemhuis</a></h3>
+    <p class="out">
+      This talk was a great overview of where the Linux kernel started and how far it has come, all the while taking small steps to solve the big problems. Thorsten also covers some of the changes that have impacted the kernel such as the creation of eBPF, which is allowing container technology to be more efficient and secure. The talk also briefly covers the state of filesystems in the kernel.
+    </p>
+<h3 class="dont-panic"><a href="https://fosdem.org/2020/schedule/event/containers_kata/">Kata Containers on openSUSE</a>
+by <a href="https://fosdem.org/2020/schedule/speaker/ralf_haferkamp/">Ralf Haferkamp</a></h3>
+    <p class="out">
+      <a href="https://katacontainers.io/">Kata</a> is an interesting take on containers. It allows you to swap the <a href="https://github.com/opencontainers/runc">runc</a> runtime with <a href="https://katacontainers.io/">Kata</a>. You can leverage small virtual machines for each of the containers you are deploying, giving even more isolation between them but still allowing you to take advantage of all the tools that are created for containers such as BPF, <a href="https://kubernetes.io/">Kubernetes</a>, <a href="https://podman.io/">podman</a> and the <a href="https://github.com/opencontainers/image-spec">OCI image format</a>. It’s also available rootless.
+    </p>
+    <p class="out">
+      Just before this talk I got to chat to Richard Brown, <a href="https://www.opensuse.org/">OpenSuse</a> ex-Board Chairman, about <a href="https://podman.io/">podman</a> and filesystems, all of this without realising who I was talking to. This is one of the things I love about <a href="https://fosdem.org/2020/">FOSDEM</a> - you can just bump into and casually talk to so many amazing devs.
+    </p>
+<h3 class="dont-panic" ><a href="https://fosdem.org/2020/schedule/event/riek_kubernetes/">How Containers and Kubernetes re-defined the GNU/Linux Operating System
+A Greybeard’s Worst Nightmare</a>
+by <a href="https://twitter.com/RiekDaniel">Daniel Riek</a></h3>
+    <p class="out">
+      This was an interesting talk about the evolution of the computing stack covering the influence of the different technologies over time. It looked at how technologies like VMs, containers, binary packages and more, have drastically changed how we consume software and how we architect our solutions.
+    </p>
+<h3 class="dont-panic" ><a href="https://fosdem.org/2020/schedule/event/tor/">State of the Onion
+The Road to Mainstream Adoption and Improved Censorship Circumvention</a>
+by <a href="https://fosdem.org/2020/schedule/speaker/pili_guerra/">Pili Guerra</a></h3>
+    <p class="out">
+      This session was the annual report on the state of the <a href="https://www.torproject.org/">Tor Project</a>. For those of you that don’t know what the <a href="https://www.torproject.org/">Tor Project</a> is, it’s a distributed uncensored network which allows you to be anonymous while accessing the Internet.
+    </p>
+    <p class="out">
+      This project is very important to me as I have seen its use to save lives and allow people to continue to fight their corrupt or dictatorial governments in a country where they are censored. The <a href="https://www.torproject.org/">Tor Project</a> organisation continues to improve the user experience of the Tor Browser and they have created a very talented UX team who are utilising the latest in industry techniques. One of these techniques being user <a href="https://www.usability.gov/how-to-and-tools/methods/personas.html">personas</a>. User <a href="https://www.usability.gov/how-to-and-tools/methods/personas.html">personas</a> are used to help drive UX improvements across all the products the <a href="https://www.torproject.org/">Tor Project</a> distributes. They made the <a href="https://www.usability.gov/how-to-and-tools/methods/personas.html">personas</a> available freely, which got me and a friend discussing how it would be awesome to have a large repository of open source <a href="https://www.usability.gov/how-to-and-tools/methods/personas.html">personas</a> for all FOSS projects to take advantage of. This would help improve the user experience of FOSS products, reaching more people out there and maybe finally bringing the year of Linux on the desktop.
+    </p>
+    <p class="out">
+      They also had some cool stats for people who like to dig into the numbers. For example, the current available network bandwidth is around 300Gbps and only half of it is being used. This is thanks to the community of volunteers that run well over 6000 relays. </p>
+
+      <p class="out">
+        Sadly, the report also showed a drop in the number of bridges. Bridges are relays that are not publicly published that allow people to access the network even when it is blocked or censored in their environment. </p>
+
+        <p class="out">
+          Lastly, they covered the release of the Tor Browser on Android. Previously, accessing the Tor network on mobile required 2 applications - Orbot and Orfox and the new release removes the complexity of having 2 applications to access Tor.
+    </p>
+<h3 class="dont-panic" ><a href="https://fosdem.org/2020/schedule/event/hfaf/">Homebrew: Features and Funding</a>
+by <a href="https://mikemcquaid.com/about/">Mike McQuaid</a></h3>
+    <p class="out">
+      This was an interesting session on how <a href="https://brew.sh">Homebrew</a> manages beta access by putting users who have ran the dev tools onto the beta channel. The talk covered how <a href="https://brew.sh">Homebrew</a> uses feature flags to allow testing of broken/not yet ready features. Mike shared how <a href="https://brew.sh">Homebrew</a> achieved better reach for funding by asking for it in a polite and non-intrusive way within the tool itself, where users would actually see it.
+    </p>
+<h3 class="dont-panic" ><a href="https://fosdem.org/2020/schedule/event/rhdlp/">Reinventing Home Directories
+Let’s bring the UNIX concept of Home Directories into the 21st century</a>
+by <a href="http://0pointer.de/lennart/">Lennart Poettering</a></h3>
+    <p class="out">
+      This is one of the talks that I missed out on but I will be waiting impatiently for the release of the recording. <a href="https://github.com/poettering/systemd/tree/homed">Systemd-homed</a> will be a space to keep an eye on as it will fundamentally change how home directories are managed and setup on <a href="https://github.com/poettering/systemd">systemd</a> Linux distributions.
+    </p>
+<h3 class="dont-panic" ><a href="https://fosdem.org/2020/schedule/event/dip_tor_dev_intro/">An Introduction to the Tor Ecosystem for Developers</a>
+by <a href="https://ahf.me/">Alexander Færøy</a></h3>
+    <p class="out">
+      Another talk on the <a href="https://www.torproject.org/">Tor Project</a>, this time about how it is maintained and developed. It was a great introduction on where to start if you are interested in contributing to the project.
+    </p>
+<h3 class="dont-panic" ><a href="https://fosdem.org/2020/schedule/event/dip_p2p_matrix/">The Path to Peer-to-Peer Matrix
+In which we throw away DNS and run Matrix clientside over libp2p and friends</a>
+by <a href="https://fosdem.org/2020/schedule/speaker/matthew_hodgson/">Matthew Hodgson</a></h3>
+    <p class="out">
+      As a die-hard fan of <a href="https://matrix.org/">Matrix</a> I was a bit sad to have to miss this talk but the recording is available <a href="https://ftp.belnet.be/mirror/FOSDEM/2020/UA2.220/dip_p2p_matrix.mp4">here</a>. For those of you who haven’t heard of <a href="https://matrix.org/">Matrix</a>, it is an open standard for secure, decentralised, real-time communication. The easiest way to use it is via a called <a href="https://riot.im/">Riot</a> which I really like. This talk specifically detailed the instructions on how to make <a href="https://matrix.org/">Matrix</a> peer to peer, removing the need for servers and DNS.
+    </p>
+<h3 class="dont-panic" ><a href="https://fosdem.org/2020/schedule/event/privacy_by_design/">Privacy by Design</a>
+by <a href="https://fosdem.org/2020/schedule/speaker/trishul_goel/">Trishul Goel</a></h3>
+    <p class="out">
+      I would recommend this session to all web devs out there - it covered how to build a website that protects user's data by design, utilising available HTTP headers such as <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">Content Security Policy</a> and the new <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Feature_Policy">Feature Policy</a>. All of this while creating a more performant website.
+    </p>
+<h3 class="dont-panic" ><a href="https://fosdem.org/2020/schedule/event/fossh/">FOSSH - 2000 to 2020 and beyond!
+maddog continues to pontificate</a>
+by <a href="https://twitter.com/maddoghall">Jon ‘疯狗’ Hall</a></h3>
+    <p class="out">
+      This was the highlight of the conference for me. Delivered by Jon “Maddog” Hall, it was a great historical overview of the evolution of Freedom and Open Source Software, full of comedy and even got a bit emotional. I cannot recommend it enough especially if you love FOSS as much as I do.
+    </p>
+<h3 class="dont-panic" ></a>Conclusion</h3>
+    <p class="out">
+      <a href="https://fosdem.org/2020/">FOSDEM</a> was an excellent event and I would recommend it highly to anyone who is passionate about or would like to explore the world of FOSS. For me, it was also a great excuse to spend some time in Brussels - the city where I grew up.
+    </p>
+<h3 class="dont-panic" >A few pictures from the conferece:</h3>
+    <div class="gallery">
+      <a target="_blank" href="img/fosdem_vim_timetable.jpeg">
+        <img src="img/fosdem_vim_timetable.jpeg" alt="Using vim to keep track of the busy timetable of the event." width="600" height="400">
+      </a>
+      <div class="desc">Using vim to keep track of the busy timetable of the event.</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="img/fosdem_hackers_drink.jpeg">
+        <img src="img/fosdem_hackers_drink.jpeg" alt="The hackers drink of choice and the most efficient form of caffeine." width="600" height="400">
+      </a>
+      <div class="desc">The hackers drink of choice and so full of caffeine.</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="img/fosdem_opensuse_beer.jpeg">
+        <img src="img/fosdem_opensuse_beer.jpeg" alt="OpenSuse brought german beer to Belgium." width="600" height="400">
+      </a>
+      <div class="desc">OpenSuse brought German beer to Belgium.</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="img/fosdem_stickers.jpeg">
+        <img src="img/fosdem_stickers.jpeg" alt="Some of my new favourite stickers in there." width="600" height="400">
+      </a>
+      <div class="desc">Some of my new favourite stickers in there.</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="img/fosdem_swag.jpeg">
+        <img src="img/fosdem_swag.jpeg" alt="Some of my new favourite stickers in there." width="600" height="400">
+      </a>
+      <div class="desc">So much great swag, my favourite being the <a href="https://www.torproject.org/">Tor Project</a> t-shirt.</div>
+    </div>
+  </body>
+</html>
