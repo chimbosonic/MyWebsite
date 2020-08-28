@@ -106,10 +106,28 @@ fr_BE.UTF-8 UTF-8
 es_VE.UTF-8 UTF-8
 nl_BE.UTF-8 UTF-8
 </span>
-<span class="prompt">[<span class="user">chimbosonic</span>@<span class="host">website</span> <span class="dir">~</span>]<span class="p">#</span></span> keybase pgp list
-<span class="out">Keybase Key ID:  010131b39200603059b46372e2b9eaadeff71e4ba795317166509b6d64fc9b0d81d50a
-PGP Fingerprint: 4359 07F3 0206 8C0C 4FCF BC52 1846 4052 A4B2 35E2
-PGP Identities:   Alexis Lowe <alexis.lowe@protonmail.ch>
+<span class="prompt">[<span class="user">chimbosonic</span>@<span class="host">website</span> <span class="dir">~</span>]<span class="p">#</span></span> gpg --list-keys "Alexis Lowe"
+<span class="out">pub   ed25519 2020-08-26 [SC] [expires: 2021-08-26]
+A03351F7677A6D0B94F224A636CB3789EAC25E50
+uid           [ultimate] Alexis Lowe <alexis.lowe@protonmail.com>
+sub   cv25519 2020-08-26 [E] [expires: 2021-08-26]
+</span>
+<span class="prompt">[<span class="user">chimbosonic</span>@<span class="host">website</span> <span class="dir">~</span>]<span class="p">#</span></span> gpg --export -a "Alexis Lowe"
+<span class="out">
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mDMEX0aB7RYJKwYBBAHaRw8BAQdAYO7OlyWOajrZ/n59q/xcIJSyueYUAwlf/sQt
+piZNjbu0KEFsZXhpcyBMb3dlIDxhbGV4aXMubG93ZUBwcm90b25tYWlsLmNvbT6I
+lgQTFggAPhYhBKAzUfdnem0LlPIkpjbLN4nqwl5QBQJfRoHtAhsDBQkB4TOABQsJ
+CAcCBhUKCQgLAgQWAgMBAh4BAheAAAoJEDbLN4nqwl5QQHAA/0oNQjIsilnv7W59
+wAB6o31qqz5xOFDRn+/KcUifvnMEAPwOzDPxCoQC5fudGvk8/Qo5rXRFz4s007ER
+n/Iu4ESgDLg4BF9Gge0SCisGAQQBl1UBBQEBB0CtCnMSuESVnbUkTg6vIItRU6c6
+cp17JLib2kLiflEPLgMBCAeIfgQYFggAJhYhBKAzUfdnem0LlPIkpjbLN4nqwl5Q
+BQJfRoHtAhsMBQkB4TOAAAoJEDbLN4nqwl5Q+PkA/iNyBmI2jvrRVryFqMIGcXGL
+FOjAW73W71WSZx9q++6QAQDblfrEAAPegblB2ZAOf/2qJ1s5fTZN1F+ujMgNnF/j
+Cg==
+=FdOf
+-----END PGP PUBLIC KEY BLOCK-----
 </span>
 <span class="prompt">[<span class="user">chimbosonic</span>@<span class="host">website</span> <span class="dir">~</span>]<span class="p">#</span></span> ls -la blog
 <span class="out">.<span class="panic">r</span>--<span class="panic">r</span>--<span class="panic">r</span>--     <span class="user">16K</span> <span class="panic">chimbosonic</span>  5 Feb 12:00 <a href="blog/fosdem.html">fosdem.html</a>
