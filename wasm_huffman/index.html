@@ -105,21 +105,24 @@
     <h2 class="dont-panic">HUFFMAN ENCODER/DECODER</h2>
 <span class="prompt">[<span class="user">chimbosonic</span>@<span class="host">website</span> <span class="dir">wasm_huffman</span>]<span class="p">#</span></span> cat README.MD
 <span class="out">This application will encode and decode give text using <a href="https://crates.io/crates/huff-tree-tap">huff-tree-tap</a> written in rust
-and compiled to WASM. You can find the project source code <a href="https://github.com/chimbosonic/wasm-huffman">here</a>. To use this add your
+and compiled to WASM. You can find the project source code <a href="https://github.com/chimbosonic/wasm-huffman">here</a>. To use this, add your
 data to the decoded_data field and press ./encode at the bottom of the page. Make sure
 to keep the encoding_map as well as the encoded_data. To decode provide the encoded_data
-and the encoding_map and press ./decode at the bottom of the page.Data inputed is a read
-as a Vec&ltu8&gt so you can give it anything. The Data outputed is Hex encoded for poratbility.</span>
+and the encoding_map and press ./decode at the bottom of the page. Data inputed is a read
+as a Vec&ltu8&gt so you can give it anything. The encoded data outputed is Hex encoded for
+poratbility.</span>
+
 <span class="prompt">[<span class="user">chimbosonic</span>@<span class="host">website</span> <span class="dir">wasm_huffman</span>]<span class="p">#</span></span> cat decoded_data
 <span class="out"><textarea id="decode_data" type="text"></textarea></span>
+
 <span class="prompt">[<span class="user">chimbosonic</span>@<span class="host">website</span> <span class="dir">wasm_huffman</span>]<span class="p">#</span></span> cat encoded_data
 <span class="out"><textarea id="encode_data" type="text"></textarea></span>
+
 <span class="prompt">[<span class="user">chimbosonic</span>@<span class="host">website</span> <span class="dir">wasm_huffman</span>]<span class="p">#</span></span> cat encoding_map
 <span class="out"><textarea id="encoding_map" type="text"></textarea></span>
+
 <span class="prompt">[<span class="user">chimbosonic</span>@<span class="host">website</span> <span class="dir">wasm_huffman</span>]<span class="p">#</span></span> <button class="button" id="encode" value="ENCODE">./encode</button>
+
 <span class="prompt">[<span class="user">chimbosonic</span>@<span class="host">website</span> <span class="dir">wasm_huffman</span>]<span class="p">#</span></span> <button class="button" id="decode" value="DECODE">./decode</button>
-
-
-
 </body>
 </html>
