@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <meta content="text/html;charset=us-ascii" http-equiv="Content-Type">
+    <style>
+      :root {
+        --base03:  #002b36;
+        --base02:	 #073642;
+        --base01:	 #586e75;
+        --base00:	 #657b83;
+        --base0:	 #839496;
+        --base1:	 #93a1a1;
+        --base2:	 #eee8d5;
+        --base3:	 #fdf6e3;
+        --yellow:	 #b58900;
+        --orange:	 #cb4b16;
+        --red:	   #dc322f;
+        --magenta: #d33682;
+        --violet:	 #6c71c4;
+        --blue:	   #268bd2;
+        --cyan:	   #2aa198;
+        --green:	 #859900;
+        --white:   #FFFFFF;
+      }
+      body {
+        background-color: var(--base03);
+        color: var(--base0);
+      }
+      #dont-panic{
+        color: var(--yellow);
+      }
+      .panic{
+        color: var(--yellow);
+      }
+      .user {
+        color: var(--green);
+      }
+      .host {
+        color: var(--blue);
+      }
+      .dir {
+        color: var(--blue);
+      }
+      .p {
+        color: var(--orange);
+      }
+      .out {
+        color: var(--white);
+      }
+      a:link {
+        color: var(--violet);
+      }
+      a:hover {
+        color: var(--blue);
+      }
+      a:focus {
+        color: var(--blue);
+      }
+      a:active {
+        color: var(--red);
+      }
+      a:visited {
+        color: var(--magenta);
+      }
+      textarea {
+        width: 40em;
+        height: 20em;
+        color: var(--base3);
+        background-color: var(--base01);
+      }
+      .button {
+        border: none;
+        cursor: pointer;
+        text-align: right;
+        background-color: var(--base03);
+        color: var(--base0);
+        font-size: 100%;
+    }
+  </style>
+  </head>
+  <body>
+  <script src="index.js"></script>
+  <pre> <!-- style="word-wrap: break-word; white-space: pre-wrap;">-->
+  <p id="dont-panic">
+                                    nnnmmm
+                     \||\       ;;;;%%%@@@@@@       \ //,
+                      V|/     %;;%%%%%@@@@@@@@@@  ===Y//
+                      68=== ;;;;%%%%%%@@@@@@@@@@@@    @Y
+                      ;Y   ;;%;%%%%%%@@@@@@@@@@@@@@    Y
+                      ;Y  ;;;+;%%%%%%@@@@@@@@@@@@@@@    Y
+                      ;Y__;;;+;%%%%%%@@@@@@@@@@@@@@i;;__Y
+                     iiY"";;   "uu%@@@@@@@@@@uu"   @"";;;>
+                            Y     "UUUUUUUUU"     @@
+                            `;       ___ _       @
+                              `;.  ,====\\=.  .;'
+                                ``""""`==\\=='
+                                       `;=====
+                                         ===
+  
+  88888b   d888b  888b  88 8P 888888    88888b    888     888b  88 88  d888b 88
+  88   88 88   88 88`8b 88      88      88   88  88 88    88`8b 88 88 88   ` 88
+  88   88 88   88 88 88 88      88      88888P  88   88   88 88 88 88 88     88
+  88   88 88   88 88 `8b88      88      88     d8888888b  88 `8b88 88 88   , ""
+  88888P   `888P  88  `888      88      88     88     `8b 88  `888 88  `888P 88
+  </p>
+    <h2 class="dont-panic">HUFFMAN ENCODER/DECODER</h2>
+<span class="prompt">[<span class="user">chimbosonic</span>@<span class="host">website</span> <span class="dir">wasm_huffman</span>]<span class="p">#</span></span> cat README.MD
+<span class="out">This application will encode and decode give text using <a href="https://crates.io/crates/huff-tree-tap">huff-tree-tap</a> written in rust
+and compiled to WASM. You can find the project source code <a href="https://github.com/chimbosonic/wasm-huffman">here</a>. To use this add your
+data to the decoded_data field and press ./encode at the bottom of the page. Make sure
+to keep the encoding_map as well as the encoded_data. To decode provide the encoded_data
+and the encoding_map and press ./decode at the bottom of the page.</span>
+<span class="prompt">[<span class="user">chimbosonic</span>@<span class="host">website</span> <span class="dir">wasm_huffman</span>]<span class="p">#</span></span> cat decoded_data
+<span class="out"><textarea id="decode_data" type="text"></textarea></span>
+<span class="prompt">[<span class="user">chimbosonic</span>@<span class="host">website</span> <span class="dir">wasm_huffman</span>]<span class="p">#</span></span> cat encoded_data
+<span class="out"><textarea id="encode_data" type="text"></textarea></span>
+<span class="prompt">[<span class="user">chimbosonic</span>@<span class="host">website</span> <span class="dir">wasm_huffman</span>]<span class="p">#</span></span> cat encoding_map
+<span class="out"><textarea id="encoding_map" type="text"></textarea></span>
+<span class="prompt">[<span class="user">chimbosonic</span>@<span class="host">website</span> <span class="dir">wasm_huffman</span>]<span class="p">#</span></span> <button class="button" id="encode" value="ENCODE">./encode</button>
+<span class="prompt">[<span class="user">chimbosonic</span>@<span class="host">website</span> <span class="dir">wasm_huffman</span>]<span class="p">#</span></span> <button class="button" id="decode" value="DECODE">./decode</button>
+
+
+
+</body>
+</html>
